@@ -27,7 +27,7 @@ class Database {
     }
     
         public function BuscaTodos() {
-        $query = "SELECT * FROM database";
+        $query = "SELECT * FROM postagens";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
@@ -37,21 +37,21 @@ class Database {
             return;
         }
         $id = $this->con->real_escape_string($id);
-        $query = "SELECT * FROM database WHERE id = $id";
+        $query = "SELECT * FROM postagens WHERE id = $id";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
     
         public function BuscaEmTitulo($titulo) {
         $id = $this->con->real_escape_string($titulo);
-        $query = "SELECT * FROM database WHERE titulo LIKE '%$titulo%'";
+        $query = "SELECT * FROM postagens WHERE titulo LIKE '%$titulo%'";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
     
     public function BuscaEmTexto($texto) {
         $id = $this->con->real_escape_string($texto);
-        $query = "SELECT * FROM database WHERE descricao LIKE '%$texto%'";
+        $query = "SELECT * FROM postagens WHERE descricao LIKE '%$texto%'";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
