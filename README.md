@@ -12,6 +12,8 @@ Gabriel
 * ##### front
 Renan
 
+*Done:* Basic structure in React
+
 * ##### news
 Eduardo
 
