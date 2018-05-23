@@ -27,9 +27,9 @@ Renan
 * ##### news
 Eduardo
 
-*Done:* Parse xml file from bbc brasil rss and return as a array os news in JSON
+*Done:* Parse rss(xml) file from bbc brasil and return as an array os news in JSON
 
-*Not done:* Fix encoding
+*Done:* Fix encoding
 
 * ##### posts
 
