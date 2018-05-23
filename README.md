@@ -13,12 +13,15 @@ Gabriel
 Renan
 
 *Done:* Basic structure in React
+
 *Not done:* Call microservices.
 
 * ##### news
 Eduardo
 
 *Done:* Parse xml file from bbc brasil rss and return as a array os news in JSON
+
+*Not done:* Fix encoding
 
 * ##### posts
 
