@@ -13,6 +13,7 @@ Gabriel
 Renan
 
 *Done:* Basic structure in React
+*Not done:* Call microservices.
 
 * ##### news
 Eduardo
