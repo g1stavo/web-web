@@ -17,7 +17,8 @@ Renan
 * ##### news
 Eduardo
 
-* Done: Parse xml file from bbc brasil rss and return as a array os news in JSON
+*Done:* Parse xml file from bbc brasil rss and return as a array os news in JSON
+
 Silvia
 
 *Done:* Insertion and search for posts and their respective GETs and POSTs + Connection to database.
