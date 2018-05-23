@@ -33,8 +33,8 @@ def rss(request):
 	for index, item in enumerate(fp.entries): 
 	    lista_temp = [item.title, item.link, item.description]	
 	    my_dict = dict(zip(lista_chaves, lista_temp))	
-	    lista_noticias.append(my_dict)
+	    lista_noticias.append(my_dict)	    
 
-	return JsonResponse(lista_noticias, safe=False)
+	return JsonResponse(lista_noticias, safe=False, json_dumps_params={'ensure_ascii' : False})
      
  
