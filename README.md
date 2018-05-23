@@ -6,8 +6,16 @@ Web Programming class group project, which is to implement a microservices app.
 * ##### authentication
 Marcel
 
+*Done*: Nothing
+
+*Not done:* Everything
+
 * ##### extensions
 Gabriel
+
+*Done*: Nothing
+
+*Not done:* Everything
 
 * ##### front
 Renan
