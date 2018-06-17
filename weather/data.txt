@@ -1,0 +1,11 @@
+weather.description = weather conditions
+main.temp = temperature atm in Celsius unit
+main.pressure = atmospheric pressure in hPa
+main.humidity = humidity, %
+main.temp_min = minimum temperature atm in Celsius unit
+main.temp_max = maximum temperature atm in Celsius unit
+wind.speed = wind speed in meter/sec
+wind.deg = wind direction, degrees
+clouds.all = cloudiness
+sys.sunrise = sunrise time in unix timestamp. use convertUnixTimestamp() in convert.js
+sys.sunset = sunset time in unix timestamp. use convertUnixTimestamp() in convert.js
