@@ -6,7 +6,7 @@ Web Programming class group project, which is to implement a microservices app.
 * ##### authentication
 Marcel
 
-*Done, 1:*: nothing
+*Done, 1:* nothing
 
 *Not done, 1:* everything
 
@@ -17,7 +17,7 @@ Marcel
 * ##### extensions
 Gabriel
 
-*Done, 1:*: nothing
+*Done, 1:* nothing
 
 *Not done, 1:* everything
 
