@@ -6,43 +6,67 @@ Web Programming class group project, which is to implement a microservices app.
 * ##### authentication
 Marcel
 
-*Done*: Nothing
+*Done, 1:*: nothing
 
-*Not done:* Everything
+*Not done, 1:* everything
+
+*Done, 2:*
+
+*Not done, 2:*
 
 * ##### extensions
 Gabriel
 
-*Done*: Nothing
+*Done, 1:*: nothing
 
-*Not done:* Everything
+*Not done, 1:* everything
+
+*Done, 2:*
+
+*Not done, 2:*
 
 * ##### front
 Renan
 
-*Done:* Basic structure in React
+*Done, 1:* basic structure in React
 
-*Not done:* Call microservices.
+*Not done, 1:* call microservices
+
+*Done, 2:*
+
+*Not done, 2:*
 
 * ##### news
 Eduardo
 
-*Done:* Parse rss(xml) file from bbc brasil and return as an array os news in JSON
+*Done, 1:* parse RSS (XML) file from BBC Brasil and return as an array of news in JSON
 
-*Done:* Fix encoding
+*Not done, 1:* fix encoding
+
+*Done, 2:*
+
+*Not done, 2:*
 
 * ##### posts
 
 Silvia
 
-*Done:* Insertion and search for posts and their respective GETs and POSTs + Connection to database.
+*Done, 1:* insertion and search for posts and their respective GETs and POSTs + connection to database
 
-*Not done:* Deleting posts(i don't know if this will be necessary) and inserting images into posts.
+*Not done, 1:* deleting posts (I don't know if this will be necessary) and inserting images into posts
+
+*Done, 2:*
+
+*Not done, 2:*
 
 * ##### weather
 
 Gustavo
 
-*What's done:* request to API, getting the current weather data of Florianópolis
+*Done, 1:* request to API, getting the current weather data of Florianópolis
 
-*What will be done:* define what will be shown in the frontend and format the output
+*Not done, 1:* define what will be shown in the frontend and format the output
+
+*Done, 2:* formalized how the JSON should be formatted in the frontend, also add a function to convert UNIX timestamp
+
+*Not done, 2:*  nothing, as it's complete
