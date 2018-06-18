@@ -11,7 +11,7 @@ var port = 8081;
 
 var router = express.Router();   
 
- getData = async (url) => {
+getData = async (url) => {
     const res = await fetch(url);
     const json = await res.json();
     return json;
