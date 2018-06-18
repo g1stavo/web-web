@@ -67,6 +67,6 @@ Gustavo
 
 *Not done, 1:* define what will be shown in the frontend and format the output
 
-*Done, 2:* formalized how the JSON should be formatted in the frontend, also add a function to convert UNIX timestamp
+*Done, 2:* got the microsservice up on Amazon Elastic Beanstalk, formalized how the JSON should be formatted in the frontend (data.txt)
 
 *Not done, 2:*  nothing, as it's complete
