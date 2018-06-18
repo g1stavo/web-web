@@ -55,9 +55,9 @@ Silvia
 
 *Not done, 1:* deleting posts (I don't know if this will be necessary) and inserting images into posts
 
-*Done, 2:*
+*Done, 2:* got the microsservice up on Infinity Free and enabled the insertion of images into posts.
 
-*Not done, 2:*
+*Not done, 2:* nothing
 
 * ##### weather
 
