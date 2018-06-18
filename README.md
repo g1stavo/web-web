@@ -41,11 +41,11 @@ Eduardo
 
 *Done, 1:* parse RSS (XML) file from BBC Brasil and return as an array of news in JSON
 
-*Not done, 1:* fix encoding
+*Not done, 1:* nothing
 
-*Done, 2:*
+*Done, 2:* fix enconding
 
-*Not done, 2:*
+*Not done, 2:* nothing
 
 * ##### posts
 
