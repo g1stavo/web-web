@@ -7,5 +7,5 @@ main.temp_max = maximum temperature atm in Celsius unit
 wind.speed = wind speed in meter/sec
 wind.deg = wind direction, degrees
 clouds.all = cloudiness
-sys.sunrise = sunrise time in unix timestamp. use convertUnixTimestamp() in convert.js
-sys.sunset = sunset time in unix timestamp. use convertUnixTimestamp() in convert.js
+sys.sunrise = sunrise time in unix timestamp
+sys.sunset = sunset time in unix timestamp

@@ -4,12 +4,14 @@
   "description": "Weather microservice",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js start"
   },
   "author": "Gustavo de Castro Salvador",
   "license": "ISC",
   "dependencies": {
     "es6-promise": "^4.2.4",
+    "express": "^4.16.3",
     "isomorphic-fetch": "^2.2.1"
   }
 }
