@@ -1,29 +1,48 @@
-var fs = require("fs");
-var express = require("express");
+var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var fetch = require("node-fetch");
+var fetch = require('node-fetch');
+var cors = require('cors');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 var port = 8081;
 
-var router = express.Router();   
+var router = express.Router();
 
-getData = async (url) => {
-    const res = await fetch(url);
-    const json = await res.json();
-    return json;
-};
-
-router.get('/', async (req, res) => {
-    const p = await getData({
+router.get('/', (req, res) => {
+    const p = {
         "user1" : {
             "name": "Talavera",
             "extension": "0001"
+        },
+        "user2" :{
+            "name" : "Gabriel",
+            "extension" : "0002"
+        },
+        "user3" : {
+            "name" : "Gustavo",
+            "extension" : "0003"
+        },
+        "user4" : {
+            "name": "Silvia",
+            "extension" : "0004"
+        },
+        "user5" : {
+            "name": "Renan",
+            "extension" : "0005"
+        },
+        "user6" : {
+            "name": "Marcel",
+            "extension" : "0666"
+        },
+        "user7" : {
+            "name": "Eduardo",
+            "extension" : "0007"
         }
-    });
+    };
     res.json(p);
 });
 
