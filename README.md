@@ -12,8 +12,6 @@ Marcel
 
 *Done, 2:*
 
-*Not done, 2:*
-
 * ##### extensions
 Gabriel
 
@@ -22,8 +20,6 @@ Gabriel
 *Not done, 1:* everything
 
 *Done, 2:*
-
-*Not done, 2:*
 
 * ##### front
 Renan
@@ -34,8 +30,6 @@ Renan
 
 *Done, 2:*
 
-*Not done, 2:*
-
 * ##### news
 Eduardo
 
@@ -43,9 +37,7 @@ Eduardo
 
 *Not done, 1:* nothing
 
-*Done, 2:* fix enconding
-
-*Not done, 2:* nothing
+*Done, 2:* fix encoding
 
 * ##### posts
 
@@ -57,8 +49,6 @@ Silvia
 
 *Done, 2:* got the microsservice up on Infinity Free and enabled the insertion of images into posts.
 
-*Not done, 2:* nothing
-
 * ##### weather
 
 Gustavo
@@ -68,5 +58,3 @@ Gustavo
 *Not done, 1:* define what will be shown in the frontend and format the output
 
 *Done, 2:* got the microsservice up on Amazon Elastic Beanstalk, formalized how the JSON should be formatted in the frontend (data.txt)
-
-*Not done, 2:*  nothing, as it's complete
