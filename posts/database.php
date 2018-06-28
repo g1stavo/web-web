@@ -2,10 +2,11 @@
 
 class Database {
 
-    private $host = 'localhost';
-    private $dbname = 'database';
-    private $dbuser = 'silvia';
-    private $dbpw = 'NwglOju3koyObVCq';
+	//Configurações do banco de dados:
+    private $host = '';
+    private $dbname = '';
+    private $dbuser = '';
+    private $dbpw = '';
     private $con;
 
     function __construct() {
@@ -21,13 +22,16 @@ class Database {
         $texto = $this->con->real_escape_string($texto);
         if ($imagem != null) {
             $imagem = $this->con->real_escape_string($imagem);
+            $query = "INSERT INTO posts (titulo, descricao, foto) VALUES ('$titulo', '$texto', '$imagem')";
         }
-        $query = "INSERT INTO postagens (titulo, descricao) VALUES ('$titulo', '$texto')";
+        else {
+            $query = "INSERT INTO posts (titulo, descricao) VALUES ('$titulo', '$texto')";
+        }
         $this->con->query($query);
     }
     
-        public function BuscaTodos() {
-        $query = "SELECT * FROM postagens";
+    public function BuscaTodos() {
+        $query = "SELECT * FROM posts";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
@@ -37,21 +41,31 @@ class Database {
             return;
         }
         $id = $this->con->real_escape_string($id);
-        $query = "SELECT * FROM postagens WHERE id = $id";
+        $query = "SELECT * FROM posts WHERE id = $id";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
     
-        public function BuscaEmTitulo($titulo) {
-        $id = $this->con->real_escape_string($titulo);
-        $query = "SELECT * FROM postagens WHERE titulo LIKE '%$titulo%'";
+    public function BuscaEmTitulo($titulo) {
+        $titulo = $this->con->real_escape_string($titulo);
+        $query = "SELECT * FROM posts WHERE titulo LIKE '%$titulo%'";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
     
     public function BuscaEmTexto($texto) {
-        $id = $this->con->real_escape_string($texto);
-        $query = "SELECT * FROM postagens WHERE descricao LIKE '%$texto%'";
+        $texto = $this->con->real_escape_string($texto);
+        $query = "SELECT * FROM posts WHERE descricao LIKE '%$texto%'";
+        $res = $this->con->query($query);
+        return $this->PreparaJSON($res);
+    }
+    
+    public function BuscaNovos($novos) {
+        if (!filter_var($novos, FILTER_VALIDATE_INT) || $novos <= 0) {
+            return;
+        }
+        $novos = $this->con->real_escape_string($novos);
+        $query = "SELECT * FROM posts ORDER BY id DESC LIMIT $novos";
         $res = $this->con->query($query);
         return $this->PreparaJSON($res);
     }
@@ -63,4 +77,5 @@ class Database {
         }
         return json_encode($arr);
     }
+
 }
