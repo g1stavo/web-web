@@ -14,35 +14,15 @@ var router = express.Router();
 
 router.get('/', (req, res) => {
     const p = {
-        "user1" : {
-            "name": "Talavera",
-            "extension": "0001"
-        },
-        "user2" :{
-            "name" : "Gabriel",
-            "extension" : "0002"
-        },
-        "user3" : {
-            "name" : "Gustavo",
-            "extension" : "0003"
-        },
-        "user4" : {
-            "name": "Silvia",
-            "extension" : "0004"
-        },
-        "user5" : {
-            "name": "Renan",
-            "extension" : "0005"
-        },
-        "user6" : {
-            "name": "Marcel",
-            "extension" : "0666"
-        },
-        "user7" : {
-            "name": "Eduardo",
-            "extension" : "0007"
-        }
-    };
+        "users" : [
+            { "name": "Talavera", "extension": "0001" },
+            { "name" : "Gabriel", "extension" : "0002" },
+            { "name" : "Gustavo", "extension" : "0003" },
+            { "name": "Silvia", "extension" : "0004" },
+            { "name": "Renan", "extension" : "0005" },
+            { "name": "Marcel", "extension" : "0666" },
+            { "name": "Eduardo", "extension" : "0007" }
+        ]};
     res.json(p);
 });
 
