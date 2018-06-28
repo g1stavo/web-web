@@ -1,11 +1,12 @@
-var fs = require("fs");
 var express = require("express");
+var cors = require("cors");
 var app = express();
 var bodyParser = require('body-parser');
 var fetch = require("node-fetch");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 var port = 8081;
 

@@ -41,8 +41,8 @@
                     <li><strong>id</strong>: Uma int com o ID único do artigo.</li>
                     <li><strong>título</strong>: String com o nome do artigo.</li>
                     <li><strong>descricao</strong>: String com o corpo do artigo.</li>
-                    <li><strong>foto</strong>: Null caso não possua imagem, string com o nome do arquivo caso contrário. A imagem pode ser encontrada em: http://www.ketolow.rf.gd/imagens/</li>
-                                
+                    <li><strong>foto</strong>: Null caso não possua imagem, string com o nome do arquivo caso contrário. A imagem pode ser acessada concatenando o nome do arquivo ao url: http://www.ketolow.rf.gd/imagens/</li>
+                    <li><strong>datahora</strong>: String com a timestamp da postagem, em formato YYYY-MM-DD hh:mm:ss</li>
                 </ul>
             </li>
         </ul>

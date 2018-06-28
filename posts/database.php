@@ -2,6 +2,7 @@
 
 class Database {
 
+	//Configurações do banco de dados:
     private $host = '';
     private $dbname = '';
     private $dbuser = '';
