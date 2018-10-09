@@ -1,16 +1,15 @@
-var express = require("express");
-var cors = require("cors");
-var app = express();
+var express = require('express');
+var cors = require('cors');
 var bodyParser = require('body-parser');
 var fetch = require("node-fetch");
+var app = express();
+
+var port = 8081;
+var router = express.Router();   
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-
-var port = 8081;
-
-var router = express.Router();   
 
 getData = async (url) => {
     const res = await fetch(url);
@@ -25,7 +24,7 @@ router.get('/', async (req, res) => {
 
 router.get('/convert', async (req, res) => {
     const time = req.query.unix_timestamp;
-    let date = new Date(time*1000);
+    let date = new Date(time * 1000);
     let hours = date.getHours();
     let minutes = "0" + date.getMinutes();
     let seconds = "0" + date.getSeconds();
@@ -43,7 +42,7 @@ stop = () => {
     app.close();
 };
 
-if(process.argv.indexOf('start') != -1){
+if (process.argv.indexOf('start') != -1) {
     init();
     console.log("Server listening on port: ", port);
 };
